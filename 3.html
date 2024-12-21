@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Studios - New Articles</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Reset some default styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        :root {
+            --background-color: #ffffff;
+            --text-color: #333;
+            --card-bg-color: #f4f4f4;
+        }
+
+        body.dark-mode {
+            --background-color: #121212;
+            --text-color: #ffffff;
+            --card-bg-color: #1e1e1e;
+        }
+
+        /* Theme Toggle Button */
+        .theme-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Article Cards */
+        .article-card {
+            background-color: var(--card-bg-color);
+            transition: background-color 0.3s;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .article-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 1rem;
+        }
+
+        .article-content h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        button.read-more-btn {
+            background-color: #e50914;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button.read-more-btn:hover {
+            background-color: #f40612;
+        }
+
+        .long-text {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="bg-dark text-white">
+        <nav class="container d-flex justify-content-between align-items-center py-3">
+            <h1><a href="Marvel Opening Theme.mp4" style="text-decoration: none; color: red;">Marvel Studios</a></h1>
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-white">About</a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link text-white">Contact Us</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <section class="articles">
+            <h2 class="mb-4" style="color: whitesmoke;">News Articles</h2>
+
+            <!-- Article 1 -->
+            <div class="article-card row">
+                <div class="col-md-4">
+                    <img src="card-12.png" alt="Article Image">
+                </div>
+                <div class="article-content col-md-8">
+                    <h3 style="color: red;">Shang-Chi's Simu Liu Has an Exciting Update on His Marvel Sequel</h3>
+                    <p class="short-text" style="color: blue;">Finally, some good news about the sequel.</p>
+                    <p class="long-text" style="color: blue;">One of the MCU's coolest and most forgotten about heroes,
+                        Shang-Chi, will be returning to the MCU, says Simu Liu. Shang-Chi, the master martial artist,
+                        made his MCU debut in the 2021 MCU hit Shang-Chi and the Legend of the Ten Rings. Despite good
+                        reviews from audiences and critics, the movie's COVID release date severely limited its box
+                        office potential. Because the character has yet to appear in any follow-up MCU movie or series,
+                        fans assumed that Shang-Chi's spotlight had faded permanently. However, Simu Liu has provided
+                        audiences with some great news.
+
+                        Speaking to The Times of India about his new movie Jackpot (which also features his Shang-Chi
+                        co-star Awkafina), Simu Liu confirmed that Shang-Chi 2 is in the works at Marvel Studios. The
+                        actor didn't provide any details about the film's potential release date, production timeline,
+                        or plot, joking that it's above his pay grade. But Liu's confirmation is the first piece of good
+                        Shang-Chi news fans have received since the movie's release. Liu said:
+                        "A lot of it is above my pay grade, but it's definitely happening. So, just very excited to kind
+                        of work on it, and it's going to be amazing. I really can't say anything beyond that."
+                        Starring Simu Liu, Awkwafina, Tony Leung, Ben Kingsley, Meng'er Zhang, Michelle Yeoh, Fala Chen,
+                        and Benedict Wong, Shang-Chi formally introduced the legendary Ten Rings organization to the
+                        MCU. The iconic Marvel villains were first teased in Iron Man 3, but that version was a fake (an
+                        actor named Trevor Slattery, played by Ben Kingsley, was hired to pose as the Mandarin). The Ten
+                        Rings were then teased in a Marvel One shot (remember when Marvel made those?) titled All Hail
+                        the King, revealing that the Ten Rings did exist in the MCU. As well as promising a return for
+                        its eponymous hero, the end of Shang-Chi also teased that the Ten Rings would return.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="article-card row">
+                <div class="col-md-4">
+                    <img src="card-13.png" alt="Article Image">
+                </div>
+                <div class="article-content col-md-8">
+                    <h3 style="color: red;">Cate Blanchett Describes the 'Backwards' Process of How Marvel Movies Are
+                        Made</h3>
+                    <p class="short-text" style="color: blue;">The actor behind one of the MCU’s most powerful villains
+                        reveals that the studio isn't "necessarily used to having a whole script.”</p>
+                    <p class="long-text" style="color: blue;">There’s no stopping the Goddess of Death, even if “Marvel
+                        aren’t necessarily used to having a whole script.” Cate Blanchett, who proved to be an admirable
+                        foil to Chris Hemsworth’s God of Thunder in one of the Marvel Cinematic Universe’s most beloved
+                        big-screen entries, spoke about the strange process behind making Thor: Ragnarok (2017). But
+                        under the guidance of visionary director, Taika Waititi, the third Thor film went on to become
+                        not only a financial success, but a fan-favorite that even bedazzled critics.
+
+                        Blanchett’s villainous Hela remains quite memorable, and she played an enormous part in the
+                        superhero flick’s success. However, the Oscar winner revealed that bringing the project to life
+                        involved quite the unorthodox process, which did not include a full screenplay. While promoting
+                        her new film, Borderlands, Blanchett said in an interview with GQ:
+
+                        "You know, Marvel aren’t necessarily used to having a whole script, so there wasn’t anything…
+                        You know, often, though, they will board the essential battles, and then they'll start working
+                        backwards and construct their stories. It's a whole, big, massive jigsaw puzzle, I don't know.
+                        What I didn't realize then was [it was] the first time a female villain had been realized
+                        onscreen [for the MCU], so that was exciting.”<br>Blanchett continued:
+
+                        “But I knew Taika [Waititi] was going to put his own particular spin on it, and that Chris
+                        [Hemsworth] was so up for anything, incredibly generous and funny, and ready to kind of move
+                        this in another direction. So, it felt like there was a really playful, exciting energy — fresh
+                        winds were moving through. It was great, it was really great.”<br>Cate Blanchett clearly
+                        portrayed one of the best and most powerful MCU villains since the inception of the Marvel
+                        Cinematic Universe. But as the Oscar-winning performer jests in her interview with GQ, strangely
+                        enough, Blanchett was not asked to portray Thor, nor wield Mjöllnir — although Hela seemed giddy
+                        to destroy the God of Thunder’s precious hammer. Five years later, in Thor: Love and Thunder,
+                        Natalie Portman did get to play a version of the character, which Blanchett had her own thoughts
+                        on. Blanchett said during the same sit-down:<br>Blanchett’s good feeling about Chris Hemsworth
+                        paid off as Thor: Ragnarok became a hit with critics and fans alike. Taika Waititi’s first film
+                        in the MCU boasts the best CinemaScore (A) of all the Thor movies, and fans also gave the film
+                        an 87% audience score on Rotten Tomatoes. Critics were even more smitten with Ragnarok, which
+                        resulted in Thor 3 registering an impressive 93% on the Tomatometer.
+
+                        So, how did Blanchett land the highly coveted role of the Goddess of Death? Well, the thespian
+                        did explain how the events unfolded in the same interview, and it turns out her admiration for
+                        Waititi's work played a large part in winning the part of Hela. The Oscar winner said (below):
+
+                        “Well, I’d seen Taika’s films and loved them. I’d heard that it was happening, but I didn’t
+                        think anything of it. And then I just got a call saying that Taika wanted to meet — and would I
+                        [be interested]. And I said, ‘Yeah, of course!’ And I didn’t know what he [wanted]. I just
+                        thought he wanted to say hello. And then he asked would I be in it.”
+
+                        Cate Blanchett won her first Oscar (Best Supporting Actress) for her work on The Aviator (2004),
+                        and then she took home the Best Actress Academy Award for Woody Allen’s Blue Jasmine (2013) at
+                        the 2014 ceremony. In total, Blanchett has been nominated for eight Oscars. </p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example" style="display: flex; justify-content: center;">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="News.html">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="1.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="3.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="next.html">Next</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Designed for Engineers</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            /* General Body Styling */
+            body {
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                overflow-x: hidden;
+                background-color: #121212;
+            }
+
+            /* Hero Section Styling */
+            .hero-section {
+                position: relative;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: white;
+                background-color: #1d2a35;
+                overflow: hidden;
+            }
+
+            .hero-text {
+                z-index: 2;
+                max-width: 800px;
+                animation: fadeInUp 1s ease-in-out;
+            }
+
+            .hero-text h1 {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            .hero-text p {
+                font-size: 1.2rem;
+                color: #adb5bd;
+            }
+
+            /* CTA Buttons */
+            .hero-text a {
+                color: #00b4d8;
+                font-weight: bold;
+                text-decoration: none;
+                margin: 0 20px;
+                border: 2px solid #00b4d8;
+                padding: 10px 20px;
+                border-radius: 50px;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            .hero-text a:hover {
+                background-color: #00b4d8;
+                color: white;
+            }
+
+            /* Tilted Box Styling */
+            .tilted-box-light,
+            .tilted-box-dark {
+                position: absolute;
+                width: 500px;
+                height: 700px;
+                opacity: 0.2;
+                z-index: 1;
+            }
+
+            .tilted-box-light {
+                background-color: #f8f9fa;
+                transform: rotate(25deg);
+                top: -100px;
+                left: -200px;
+                animation: moveLightBox 8s infinite alternate ease-in-out;
+            }
+
+            .tilted-box-dark {
+                background-color: #343a40;
+                transform: rotate(-25deg);
+                top: 300px;
+                right: -200px;
+                animation: moveDarkBox 8s infinite alternate ease-in-out;
+            }
+
+            /* Keyframes for box animation */
+            @keyframes moveLightBox {
+                0% {
+                    top: -150px;
+                    left: -220px;
+                }
+
+                100% {
+                    top: -100px;
+                    left: -150px;
+                }
+            }
+
+            @keyframes moveDarkBox {
+                0% {
+                    top: 280px;
+                    right: -220px;
+                }
+
+                100% {
+                    top: 300px;
+                    right: -150px;
+                }
+            }
+
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .hero-text h1 {
+                    font-size: 2rem;
+                }
+
+                .tilted-box-light,
+                .tilted-box-dark {
+                    width: 300px;
+                    height: 400px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <section class="hero-section">
+            <div class="tilted-box-light">
+                <img src="hd-3.png" alt="">
+            </div>
+            <div class="tilted-box-dark">
+                <img src="marvel-2.png" alt="">
+            </div>
+
+            <div class="hero-text">
+                <h1>Latest Marvel Studios News</h1>
+                <p>Stay updated with the most recent news, exclusive content, and behind-the-scenes stories from the
+                    Marvel Cinematic Universe.</p>
+
+                <a
+                    href="https://www.murphysmultiverse.com/marvel-studios-reportedly-considering-canceling-two-major-projects/">Learn
+                    more</a>
+
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    </html>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>© 2023 onward Company, Inc. · <a href="https://www.marvel.com/corporate/privacy"
+                    style="color: yellow;">Privacy</a> · <a href="https://www.marvel.com/corporate/terms"
+                    style="color: yellow;">Terms</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Dark/Light mode toggle
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const themeIcon = themeToggleBtn.querySelector('i');
+            if (body.classList.contains('dark-mode')) {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            } else {
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            }
+        });
+
+        // Read More/Read Less functionality
+        document.querySelectorAll('.read-more-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const shortText = button.previousElementSibling.previousElementSibling;
+                const longText = button.previousElementSibling;
+
+                if (longText.style.display === 'none') {
+                    longText.style.display = 'block';
+                    shortText.style.display = 'none';
+                    button.textContent = 'Read Less';
+                } else {
+                    longText.style.display = 'none';
+                    shortText.style.display = 'block';
+                    button.textContent = 'Read More';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

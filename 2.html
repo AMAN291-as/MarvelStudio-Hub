@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Studios - New Articles</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Reset some default styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        :root {
+            --background-color: #ffffff;
+            --text-color: #333;
+            --card-bg-color: #f4f4f4;
+        }
+
+        body.dark-mode {
+            --background-color: #121212;
+            --text-color: #ffffff;
+            --card-bg-color: #1e1e1e;
+        }
+
+        /* Theme Toggle Button */
+        .theme-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Article Cards */
+        .article-card {
+            background-color: var(--card-bg-color);
+            transition: background-color 0.3s;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .article-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 1rem;
+        }
+
+        .article-content h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        button.read-more-btn {
+            background-color: #e50914;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button.read-more-btn:hover {
+            background-color: #f40612;
+        }
+
+        .long-text {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="bg-dark text-white">
+        <nav class="container d-flex justify-content-between align-items-center py-3">
+            <h1><a href="Marvel Opening Theme.mp4" style="text-decoration: none; color: red;">Marvel Studios</a></h1>
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-white">About</a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link text-white">Contact Us</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <section class="articles">
+            <h2 class="mb-4" style="color: whitesmoke;">News Articles</h2>
+
+            <!-- Article 1 -->
+            <div class="article-card row">
+                <div class="col-md-4">
+                    <img src="card-10.png" alt="Article Image">
+                </div>
+                <div class="article-content col-md-8">
+                    <h3 style="color: red;">Marvel's Vision Series Is Reviving James Spader's Ultron</h3>
+                    <p class="short-text" style="color: blue;">Nearly a decade since he last voiced the character, James
+                        Spader will return as Ultron in the Disney+ Vision series.</p>
+                    <p class="long-text" style="color: blue;">Ultron is returning to the Marvel Cinematic Universe as
+                        James Spader is set to appear as the villain in the upcoming untitled Vision series on Disney+.
+                        Spader previously played Ultron in 2015's Avengers: Age of Ultron, which was also the debut film
+                        of Paul Bettany's Vision character. That film seemingly ended with Vision killing Ultron,
+                        although the fact that the film cut away from Vision's killing blast has made fans doubt the
+                        character's demise and hope for his eventual return.
+
+                        Nearly a decade later, Spader is confirmed to return as Ultron. According to The Hollywood
+                        Reporter, Spader is joining the cast of the untitled Vision series, previously known as Vision
+                        Quest. Star Trek: Picard showrunner Terry Matalas is leading the Vision series, which will
+                        follow the White Vision constructed in WandaVision as he searches for his purpose in life. The
+                        series is the third chapter in a trilogy of stories that started with WandaVision and will
+                        continue with Agatha All Along. Notably, the report says Spader will voice Ultron, not provide
+                        motion capture as he did in Avengers: Age of Ultron.Ultron was created by writer Roy Thomas and
+                        artist John Buscema and debuted in The Avengers #54 back in July 1968. In the comics, Ultron was
+                        invented by Ant-Man hero Hank Pym, but the MCU version was reimagined as a creation of Tony
+                        Stark. In Age of Ultron, Tony created the Vision body for himself to evolve before the Avengers
+                        stole it and uploaded JARVIS, creating the new hero Vision. While Ultron was defeated, his
+                        impact on the MCU was felt for years as the destruction of Sokovia led to the creation of the
+                        Sokovia Accords, which fractured the Avengers in Captain America: Civil War, and left them
+                        divided in their fight against Thanos in Avengers: Infinity War. Vision's ties to both the
+                        origin story of Vision and the Scarlet Witch have loomed large over the MCU.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="article-card row">
+                <div class="col-md-4">
+                    <img src="card-11.png" alt="Article Image">
+                </div>
+                <div class="article-content col-md-8">
+                    <h3 style="color: red;">Zack Snyder Addresses Russo Brothers Marvel Return</h3>
+                    <p class="short-text" style="color: blue;">The Watchmen director shares his thoughts on Marvel
+                        Studios' controversial future plans.</p>
+                    <p class="long-text" style="color: blue;">While the Marvel fan base is divided about the Russo
+                        Brothers returning to the MCU to direct Avengers: Doomsday and Avengers: Secret Wars, bona-fide
+                        superhero director Zack Snyder is feeling optimistic about the beloved directors making their
+                        Marvel comeback. Joe and Anthony Russo are responsible for some of Marvel Studios' most beloved
+                        and successful movies, including Captain America: The Winter Soldier, Avengers: Infinity War
+                        and, the second-biggest movie of all-time, Avengers: Endgame. When Kevin Feige announced that
+                        the Russos were returning to direct the next two Avengers movies, fans had mixed opinions. Some
+                        thought it was a lazy, overly-safe decision on Marvel Studios' part. However, others, like Zack
+                        Snyder, are glad that Marvel have paired with two directors who have established themselves as
+                        great comic book movie filmmakers.
+
+                        Zack Snyder appeared on the ReelBlend podcast to discuss his Director's Cuts for the Rebel Moon
+                        franchise. During the conversation, Snyder was asked for his opinion about the Russos making
+                        their Marvel comeback. Snyder is optimistic about Avengers: Doomsday and Secret Wars, believing
+                        the Russos to be the perfect pair to get the franchise out of its slump.
+                        He said:
+
+                        "I think that's great for them. They're amazing, and they've done really, I think they've done
+                        great work with those guys. I'm sure they'll do something amazing. They're talented guys, and I
+                        think they'll do something cool. I think it's time to shake it up a little bit."
+                        Marvel Studios' cinematic slump could be coming to an end. While Guardians of the Galaxy Vol. 3
+                        was a massive hit, the franchise, which once dominated at the box office, has been on the
+                        receiving end of poor reviews and low box office figures for its Phase 5 slate of movies.
+                        Deadpool & Wolverine has helped put Marvel Studios back on their feet — becoming the highest
+                        grossing R-rated movie in the process — but the studio needs more than one hit to carry them
+                        over the finish line for their Multiverse Saga.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example" style="display: flex; justify-content: center;">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="News.html">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="1.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="3.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="next.html">Next</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Designed for Engineers</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            /* General Body Styling */
+            body {
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                overflow-x: hidden;
+                background-color: #121212;
+            }
+
+            /* Hero Section Styling */
+            .hero-section {
+                position: relative;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: white;
+                background-color: #1d2a35;
+                overflow: hidden;
+            }
+
+            .hero-text {
+                z-index: 2;
+                max-width: 800px;
+                animation: fadeInUp 1s ease-in-out;
+            }
+
+            .hero-text h1 {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            .hero-text p {
+                font-size: 1.2rem;
+                color: #adb5bd;
+            }
+
+            /* CTA Buttons */
+            .hero-text a {
+                color: #00b4d8;
+                font-weight: bold;
+                text-decoration: none;
+                margin: 0 20px;
+                border: 2px solid #00b4d8;
+                padding: 10px 20px;
+                border-radius: 50px;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            .hero-text a:hover {
+                background-color: #00b4d8;
+                color: white;
+            }
+
+            /* Tilted Box Styling */
+            .tilted-box-light,
+            .tilted-box-dark {
+                position: absolute;
+                width: 500px;
+                height: 700px;
+                opacity: 0.2;
+                z-index: 1;
+            }
+
+            .tilted-box-light {
+                background-color: #f8f9fa;
+                transform: rotate(25deg);
+                top: -100px;
+                left: -200px;
+                animation: moveLightBox 8s infinite alternate ease-in-out;
+            }
+
+            .tilted-box-dark {
+                background-color: #343a40;
+                transform: rotate(-25deg);
+                top: 300px;
+                right: -200px;
+                animation: moveDarkBox 8s infinite alternate ease-in-out;
+            }
+
+            /* Keyframes for box animation */
+            @keyframes moveLightBox {
+                0% {
+                    top: -150px;
+                    left: -220px;
+                }
+
+                100% {
+                    top: -100px;
+                    left: -150px;
+                }
+            }
+
+            @keyframes moveDarkBox {
+                0% {
+                    top: 280px;
+                    right: -220px;
+                }
+
+                100% {
+                    top: 300px;
+                    right: -150px;
+                }
+            }
+
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .hero-text h1 {
+                    font-size: 2rem;
+                }
+
+                .tilted-box-light,
+                .tilted-box-dark {
+                    width: 300px;
+                    height: 400px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <section class="hero-section">
+            <div class="tilted-box-light">
+                <img src="hd-3.png" alt="">
+            </div>
+            <div class="tilted-box-dark">
+                <img src="marvel-2.png" alt="">
+            </div>
+
+            <div class="hero-text">
+                <h1>Latest Marvel Studios News</h1>
+                <p>Stay updated with the most recent news, exclusive content, and behind-the-scenes stories from the
+                    Marvel Cinematic Universe.</p>
+
+                <a
+                    href="https://www.murphysmultiverse.com/marvel-studios-reportedly-considering-canceling-two-major-projects/">Learn
+                    more</a>
+
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    </html>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>© 2023 onward Company, Inc. · <a href="https://www.marvel.com/corporate/privacy"
+                    style="color: yellow;">Privacy</a> · <a href="https://www.marvel.com/corporate/terms"
+                    style="color: yellow;">Terms</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Dark/Light mode toggle
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const themeIcon = themeToggleBtn.querySelector('i');
+            if (body.classList.contains('dark-mode')) {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            } else {
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            }
+        });
+
+        // Read More/Read Less functionality
+        document.querySelectorAll('.read-more-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const shortText = button.previousElementSibling.previousElementSibling;
+                const longText = button.previousElementSibling;
+
+                if (longText.style.display === 'none') {
+                    longText.style.display = 'block';
+                    shortText.style.display = 'none';
+                    button.textContent = 'Read Less';
+                } else {
+                    longText.style.display = 'none';
+                    shortText.style.display = 'block';
+                    button.textContent = 'Read More';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

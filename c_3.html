@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Studios Comics</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <style>
+        /* Default dark mode */
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        body.light-mode {
+            background-color: #f8f9fa;
+            color: #121212;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            font-size: 1.75rem;
+            color: #e62429 !important;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+            margin-right: 20px;
+        }
+
+        /* Dark/Light mode toggle button */
+        .mode-toggle {
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .mode-toggle:hover {
+            color: #e62429;
+        }
+
+        /* Hero Section */
+        .hero-section {
+         
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: #fff;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            color: #e62429;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            color: #fff;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        /* Body Section with Image Grid */
+        .comics-grid {
+            padding: 50px 0;
+        }
+
+        .comics-grid img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .comics-grid img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #343a40;
+            padding: 30px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Smooth scroll up button */
+        .scroll-up {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #e62429;
+        }
+    </style>
+</head>
+
+<body class="dark-mode">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="Marvel Opening Theme.mp4">Marvel Studios</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact-Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="mode-toggle ms-3" onclick="toggleMode()">
+                            <i id="mode-icon" class="fas fa-moon"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marvel Comics</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .hero-section {
+                background-color:#1a1a1a;
+                padding: 50px 0;
+            }
+            .hero-section img {
+                max-width: 100%;
+                height: auto;
+            }
+            .hero-section h1 {
+                margin-top: 20px;
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+            .hero-section p {
+                font-size: 1.2rem;
+                color: whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <div class="container hero-section">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-8">
+                <img src="comic.png" alt="Marvel Comics Logo" class="img-fluid">
+                <h1>Welcome to Marvel Comics</h1>
+                <p>Explore the world of superheroes, comics, and cinematic experiences like never before!</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Comics Section -->
+    <section class="container comics-grid" id="comics-section">
+        <h2 class="text-center text-danger mb-4"><b><i><u>Top Comics</u></i></b></h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+               <a href=""><img src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/66d08294bedcc/portrait_uncanny.jpg " style="height: 60vh;" alt="Comic 1" class="img-fluid rounded shadow"></a> 
+            </div>
+            <div class="col-md-4 mb-4">
+               <a href=""> <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/20/66d082a283d14/portrait_uncanny.jpg" style="height: 60vh;" alt="Comic 2" class="img-fluid rounded shadow"></a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href=""><img src="https://cdn.marvel.com/u/prod/marvel/i/mg/2/c0/66d08273e010a/portrait_uncanny.jpg"  style="height: 60vh;" alt="Comic 3" class="img-fluid rounded shadow"></a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href=""><img src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/c0/66d08252187fd/portrait_uncanny.jpg"  style="height: 60vh;" alt="Comic 3" class="img-fluid rounded shadow"></a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href=""><img src="https://cdn.marvel.com/u/prod/marvel/i/mg/5/b0/66bb71252b20e/portrait_uncanny.jpg"  style="height: 60vh;" alt="Comic 3" class="img-fluid rounded shadow"></a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href=""><img src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/a0/66bb710439d49/portrait_uncanny.jpg"  style="height: 60vh;" alt="Comic 3" class="img-fluid rounded shadow"></a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href=""><img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/66bb71243f78b/portrait_uncanny.jpg"  style="height: 60vh;" alt="Comic 3" class="img-fluid rounded shadow"></a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href=""><img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/40/66bb7100bc88f/portrait_uncanny.jpg"  style="height: 60vh; " alt="Comic 3" class="img-fluid rounded shadow"></a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href=""><img src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/90/66bb710112606/portrait_uncanny.jpg"  style="height: 60vh; " alt="Comic 3" class="img-fluid rounded shadow"></a>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example" style="display: flex; justify-content: center; ">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="comics.html">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="c_1.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="c_2.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="c_3.html">3</a></li>
+              <li class="page-item"><a class="page-link" href="c_next.html">Next</a></li>
+            </ul>
+          </nav>
+    </section>
+
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pricing Table</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: #000; /* Set background color to black */
+                color: #fff; /* Set default text color to white */
+            }
+            .card {
+                background-color: #1a1a1a; /* Darker background for cards */
+                color: #fff; /* White text for cards */
+            }
+            .card-header {
+                background-color: #333; /* Slightly lighter header */
+            }
+            .table-responsive {
+                background-color: #1a1a1a; /* Darker table background */
+            }
+            .table th, .table td {
+                color: #fff; /* White text for table */
+            }
+            .btn-outline-primary {
+                color: #0d6efd; /* Customize button text color */
+                border-color: #0d6efd; /* Customize border */
+            }
+            .btn-outline-primary:hover {
+                background-color: #0d6efd;
+                color: #fff;
+            }
+            .btn-primary {
+                background-color: #0d6efd; /* Primary button */
+            }
+        </style>
+    </head>
+    <body>
+    
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center" style="background-color: #e62429;">
+        <h1 class="display-4 fw-normal text-body-emphasis" >Pricing</h1>
+        <p class="fs-5 text-body-secondary">Quickly purchase and build an effective pricing plan for Marvel comic books. </p>
+    </div>
+    
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Silver</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$5.94/mo</h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>10 users included</li>
+                        <li>2 GB of storage</li>
+                        <li>Email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <a href="payment.html" class="w-100 btn btn-lg btn-outline-primary">pay <br><del>799</del> ₹499</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Gold</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$11.90/mo</h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>20 users included</li>
+                        <li>10 GB of storage</li>
+                        <li>Priority email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <a href="payment.html" class="w-100 btn btn-lg btn-primary">pay <br><del>1399</del> ₹999</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Platinum</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$17.85/mo</h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>30 users included</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <a href="payment.html" class="w-100 btn btn-lg btn-primary">pay <br><del>2000</del> ₹1499</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <h2 class="display-6 text-center mb-4">Compare plans</h2>
+    
+    <div class="table-responsive">
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th style="width: 34%;"></th>
+                    <th style="width: 22%;">Free</th>
+                    <th style="width: 22%;">Pro</th>
+                    <th style="width: 22%;">Enterprise</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="text-start">Public</th>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Private</th>
+                    <td></td>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th scope="row" class="text-start">Permissions</th>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Sharing</th>
+                    <td></td>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Unlimited members</th>
+                    <td></td>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Extra security</th>
+                    <td></td>
+                    <td></td>
+                    <td>&#10003;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer" style="color: yellow;">
+        <p>&copy; 2024 Marvel Studios | All Rights Reserved</p>
+    </footer>
+    <footer class="container my-4">
+        <p class="float-end"><a href="#">Back to Top</a></p>
+        <p>© 2023 onward Company, Inc. · <a href="https://www.marvel.com/corporate/privacy">Privacy</a> · <a href="https://www.marvel.com/corporate/terms">Terms</a></p>
+      </footer>
+
+    <!-- Scroll up button -->
+    <span class="scroll-up" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </span>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Toggle between dark and light mode
+        function toggleMode() {
+            const body = document.body;
+            const modeIcon = document.getElementById('mode-icon');
+
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                modeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                modeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        }
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show the scroll-up button when scrolling down
+        window.onscroll = function () {
+            const scrollUpButton = document.querySelector('.scroll-up');
+            if (document.documentElement.scrollTop > 200) {
+                scrollUpButton.style.display = 'block';
+            } else {
+                scrollUpButton.style.display = 'none';
+            }
+        };
+    </script>
+</body>
+
+</html>
+
+
+

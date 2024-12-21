@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        /* Global styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .payment-form {
+            max-width: 500px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 25px;
+            color: #666;
+            font-size: 16px;
+        }
+
+        .payment-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .payment-logo {
+            width: 40px;
+            height: auto;
+            margin-left: 10px;
+        }
+
+        .description {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .payment-form {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            .payment-logo {
+                width: 35px;
+            }
+
+            button {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="payment-form">
+        <h2>Payment</h2>
+        <p>How would you like to pay?</p>
+        <form id="paymentForm">
+
+            <div class="payment-option">
+                <input type="radio" id="giftCard" name="payment" value="Disney Gift Card">
+                <label for="giftCard">Disney Gift Card</label>
+            </div>
+            <p class="description">New! You can now use up to 5 gift cards on shopDisney!</p>
+
+            <div class="payment-option">
+                <input type="radio" id="rewardsCard" name="payment" value="Disney Rewards Redemption Card">
+                <label for="rewardsCard">Disney Rewards Redemption Card</label>
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" id="creditCard" name="payment" value="Credit or Debit Card">
+                <label for="creditCard">Credit or Debit Card</label>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="payment-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard" class="payment-logo">
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" id="clickToPay" name="payment" value="Click to Pay">
+                <label for="clickToPay">Click to Pay</label>
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" id="paypal" name="payment" value="PayPal">
+                <label for="paypal">PayPal</label>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="payment-logo">
+            </div>
+
+            <button type="button" id="continueButton">Continue to Payment</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('continueButton').addEventListener('click', function() {
+            const selectedOption = document.querySelector('input[name="payment"]:checked');
+            
+            if (selectedOption) {
+                // Redirect to a payment page
+                window.location.href = 'payment.html'; // Replace 'payment.html' with your actual payment page URL
+            } else {
+                alert('Please select a payment method.');
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,1771 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marvel Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Marvel Opening Theme.mp4" style="color: red;">Marvel Studio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact-Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">
+            Login
+          </button>
+          <button class=" btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal">
+            SignUp
+          </button>
+
+        </div>
+
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="LoginModalLabel">Login to Marvel Studio</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="Login" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--signup Modal -->
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SignUpModalLabel">Get an Marvel Studio Account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="SignUp" class="btn btn-primary">SignUp</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Theme mode darkmode and lightmode -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Toggle Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+      rel="stylesheet">
+    <style>
+      /* Custom styles for the themes */
+      body {
+        transition: background-color 0.3s, color 0.3s;
+        margin: 0;
+        padding: 0;
+      }
+
+      .dark-theme {
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+
+      .light-theme {
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      .theme-toggle-button {
+        cursor: pointer;
+        border: none;
+        background: none;
+        font-size: 1.5rem;
+        color: inherit;
+      }
+    </style>
+  </head>
+
+  <body class="light-theme">
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle-button position-fixed bottom-0 end-0 mb-3 me-3">
+      <i class="bi bi-sun-fill theme-icon-light"></i>
+      <i class="bi bi-moon-stars-fill theme-icon-dark d-none"></i>
+    </button>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const themeToggleButton = document.querySelector('.theme-toggle-button');
+        const body = document.body;
+        const lightIcon = document.querySelector('.theme-icon-light');
+        const darkIcon = document.querySelector('.theme-icon-dark');
+
+        themeToggleButton.addEventListener('click', function () {
+          // Toggle theme
+          if (body.classList.contains('dark-theme')) {
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+            lightIcon.classList.remove('d-none');
+            darkIcon.classList.add('d-none');
+          } else {
+            body.classList.remove('light-theme');
+            body.classList.add('dark-theme');
+            lightIcon.classList.add('d-none');
+            darkIcon.classList.remove('d-none');
+          }
+        });
+      });
+    </script>
+  </body>
+
+  </html>
+
+
+  <!-- slider phase -->
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+        aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+        aria-label="Slide 7"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="marvel studio-aman.jpg" style="height: 400px; width: 900px;" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h2><b>Welcome to Marvel Studio</b></h2>
+          <p><b><i>Marvel News,Blog,Articles & Press Release</i></b></p>
+          <button class="btn btn-danger"><a href="News.html" style="text-decoration: none; color: white;">NEWS</a></button>
+          <button class="btn btn-primary"><a href="comics.html"style="text-decoration: none; color: white;">COMICS</a></button>
+          <!-- <button class="btn btn-success"><a href=""style="text-decoration: none; color: white;">LIFESTYLE</a></button> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="marvel-2.png" style="height: 400px; width: 900px;" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h2><b>Welcome to Marvel Studio</b></h2>
+          <p><b><i>Marvel News,Blog,Articles & Press Release</i></b></p>
+          <button class="btn btn-danger"><a href="News.html" style="text-decoration: none; color: white;">NEWS</a></button>
+          <button class="btn btn-primary"><a href="comics.html"style="text-decoration: none; color: white;">COMICS</a></button>
+          <!-- <button class="btn btn-success"><a href=""style="text-decoration: none; color: white;">LIFESTYLE</a></button> -->
+
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <img src="marvel-3.png" style="height: 400px; width: 900px;" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h2><b>Welcome to Marvel Studio</b></h2>
+          <p><b><i>Marvel News,Blog,Articles & Press Release</i></b></p>
+          <button class="btn btn-danger"><a href="News.html" style="text-decoration: none; color: white;">NEWS</a></button>
+          <button class="btn btn-primary"><a href="comics.html"style="text-decoration: none; color: white;">COMICS</a></button>
+          <!-- <button class="btn btn-success"><a href=""style="text-decoration: none; color: white;">LIFESTYLE</a></button> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="marvel-3.webp" style="height: 400px; width: 900px;" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h2><b>Welcome to Marvel Studio</b></h2>
+          <p><b><i>Marvel News,Blog,Articles & Press Release</i></b></p>
+          <button class="btn btn-danger"><a href="News.html" style="text-decoration: none; color: white;">NEWS</a></button>
+          <button class="btn btn-primary"><a href="comics.html"style="text-decoration: none; color: white;">COMICS</a></button>
+          <!-- <button class="btn btn-success"><a href=""style="text-decoration: none; color: white;">LIFESTYLE</a></button> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="marvel-5.png" style="height: 400px; width: 900px;" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h2><b>Welcome to Marvel Studio</b></h2>
+          <p><b><i>Marvel News,Blog,Articles & Press Release</i></b></p>
+          <button class="btn btn-danger"><a href="News.html" style="text-decoration: none; color: white;">NEWS</a></button>
+          <button class="btn btn-primary"><a href="comics.html"style="text-decoration: none; color: white;">COMICS</a></button>
+          <!-- <button class="btn btn-success"><a href=""style="text-decoration: none; color: white;">LIFESTYLE</a></button> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="marvel-6.png" style="height: 400px; width: 900px;" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h2><b>Welcome to Marvel Studio</b></h2>
+          <p><b><i>Marvel News,Blog,Articles & Press Release</i></b></p>
+          <button class="btn btn-danger"><a href="News.html" style="text-decoration: none; color: white;">NEWS</a></button>
+          <button class="btn btn-primary"><a href="comics.html"style="text-decoration: none; color: white;">COMICS</a></button>
+          <!-- <button class="btn btn-success"><a href=""style="text-decoration: none; color: white;">LIFESTYLE</a></button> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="marvel-7.png" style="height: 400px; width: 900px;" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h2><b>Welcome to Marvel Studio</b></h2>
+          <p><b><i>Marvel News,Blog,Articles & Press Release</i></b></p>
+          <button class="btn btn-danger"><a href="News.html" style="text-decoration: none; color: white;">NEWS</a></button>
+          <button class="btn btn-primary"><a href="comics.html"style="text-decoration: none; color: white;">COMICS</a></button>
+          <!-- <button class="btn btn-success"><a href=""style="text-decoration: none; color: white;">LIFESTYLE</a></button> -->
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Captain America:Civil War </h2>
+            <div class="mb-1 text-body-secondary">2016 . Action . 2h 27m</div>
+            <p class="card-text mb-auto">Political pressure mounts to install a system of accountability when the
+              actions of the Avengers lead to collateral damage. The new status quo deeply divides members of the team.
+              Captain America (Chris Evans) believes superheroes should remain free to defend humanity without
+              government interference. Iron Man (Robert Downey Jr.) sharply disagrees and supports oversight. As the
+              debate escalates into an all-out feud, Black Widow (Scarlett Johansson) and Hawkeye (Jeremy Renner) must
+              pick a side.</p>
+            <a href="https://en.wikipedia.org/wiki/Captain_America:_Civil_War"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="civilwar.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">The Marvels</h3>
+            <div class="mb-1 text-body-secondary">2023 . Action . 1h 45m</div>
+            <p class="mb-auto">Carol Danvers, aka Captain Marvel, has reclaimed her identity from the tyrannical Kree
+              and taken revenge on the Supreme Intelligence. However, unintended consequences see her shouldering the
+              burden of a destabilized universe. When her duties send her to an anomalous wormhole linked to a Kree
+              revolutionary, her powers become entangled with two other superheroes to form the Marvels.</p>
+            <a href="https://en.wikipedia.org/wiki/The_Marvels" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="The_Marvels.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Thor:The Dark World </h2>
+            <div class="mb-1 text-body-secondary">2013 . Action . 1h 52m</div>
+            <p class="card-text mb-auto">In ancient times, the gods of Asgard fought and won a war against an evil race
+              known as the Dark Elves. The survivors were neutralized, and their ultimate weapon -- the Aether -- was
+              buried in a secret location. Hundreds of years later, Jane Foster (Natalie Portman) finds the Aether and
+              becomes its host, forcing Thor (Chris Hemsworth) to bring her to Asgard before Dark Elf Malekith
+              (Christopher Eccleston) captures her and uses the weapon to destroy the Nine Realms -- including Earth.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Thor:_The_Dark_World"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="thor-darkworld.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Black Widow</h3>
+            <div class="mb-1 text-body-secondary">2021 . Action . 2h 13m</div>
+            <p class="mb-auto">Natasha Romanoff, aka Black Widow, confronts the darker parts of her ledger when a
+              dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring
+              her down, Natasha must deal with her history as a spy, and the broken relationships left in her wake long
+              before she became an Avenger.</p>
+            <a href="https://en.wikipedia.org/wiki/Black_Widow_(2021_film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="black-widow.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0"> Shang-chi and the legend of the ten rings</h2>
+            <div class="mb-1 text-body-secondary">2021 . Action . 2h 12m</div>
+            <p class="card-text mb-auto">Shang-Chi, a martial artist, lives a quiet life after he leaves his father and
+              the shadowy Ten Rings organisation behind. Years later, he is forced to confront his past when the Ten
+              Rings attack him.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Shang-Chi_and_the_Legend_of_the_Ten_Rings"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="legend-shangchii.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Spiderman:Homecoming</h3>
+            <div class="mb-1 text-body-secondary">2017 . Action . 2h 13m</div>
+            <p class="mb-auto">Thrilled by his experience with the Avengers, young Peter Parker returns home to live
+              with
+              his Aunt May. Under the watchful eye of mentor Tony Stark, Parker starts to embrace his newfound identity
+              as
+              Spider-Man. He also tries to return to his normal daily routine -- distracted by thoughts of proving
+              himself
+              to be more than just a friendly neighborhood superhero. Peter must soon put his powers to the test when
+              the
+              evil Vulture emerges to threaten everything that he holds dear..</p>
+            <a href="https://en.wikipedia.org/wiki/Spider-Man:_Homecoming"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="homecoming.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Eternals</h2>
+            <div class="mb-1 text-body-secondary">2021 . Action . 2h 37m</div>
+            <p class="card-text mb-auto">The Eternals fight them, but Kro overpowers Gilgamesh and absorbs his energy,
+              gaining the ability to walk on two legs and speak English. After he leaves, Thena stays by Gilgamesh's
+              side as he dies. The other Eternals mourn him. Druig agrees to join the team in honor of Gil, and knows
+              they need to find Phastos now.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Eternals_(film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="eternals.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">The Avengers</h3>
+            <div class="mb-1 text-body-secondary">2012 . Action . 2h 23m</div>
+            <p class="mb-auto">When Thor's evil brother, Loki (Tom Hiddleston), gains access to the unlimited power of
+              the energy cube called the Tesseract, Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D., initiates a
+              superhero recruitment effort to defeat the unprecedented threat to Earth. Joining Fury's "dream team" are
+              Iron Man (Robert Downey Jr.), Captain America (Chris Evans), the Hulk (Mark Ruffalo), Thor (Chris
+              Hemsworth), the Black Widow (Scarlett Johansson) and Hawkeye (Jeremy Renner).</p>
+            <a href="https://en.wikipedia.org/wiki/The_Avengers_(2012_film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="the-avengers.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Black Panther</h2>
+            <div class="mb-1 text-body-secondary">2018 . Action . 2h 14m</div>
+            <p class="card-text mb-auto">After the death of his father, T'Challa returns home to the African nation of
+              Wakanda to take his rightful place as king. When a powerful enemy suddenly reappears, T'Challa's mettle as
+              king -- and as Black Panther -- gets tested when he's drawn into a conflict that puts the fate of Wakanda
+              and the entire world at risk. Faced with treachery and danger, the young king must rally his allies and
+              release the full power of Black Panther to defeat his foes and secure the safety of his people.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Black_Panther_(film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="panther.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Captain Marvel</h3>
+            <div class="mb-1 text-body-secondary">2019 . Action . 2h 4m</div>
+            <p class="mb-auto">Captain Marvel is an extraterrestrial Kree warrior who finds herself caught in the middle
+              of an intergalactic battle between her people and the Skrulls. Living on Earth in 1995, she keeps having
+              recurring memories of another life as U.S. Air Force pilot Carol Danvers. With help from Nick Fury,
+              Captain Marvel tries to uncover the secrets of her past while harnessing her special superpowers to end
+              the war with the evil Skrulls.</p>
+            <a href="https://en.wikipedia.org/wiki/Captain_Marvel_(film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Captain_Marvel_.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Doctor Strange</h2>
+            <div class="mb-1 text-body-secondary">2016 . Action . 1h 55m</div>
+            <p class="card-text mb-auto">Dr. Stephen Strange's (Benedict Cumberbatch) life changes after a car accident
+              robs him of the use of his hands. When traditional medicine fails him, he looks for healing, and hope, in
+              a mysterious enclave. He quickly learns that the enclave is at the front line of a battle against unseen
+              dark forces bent on destroying reality. Before long, Strange is forced to choose between his life of
+              fortune and status or leave it all behind to defend the world as the most powerful sorcerer in existence.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Doctor_Strange_(2016_film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="doctorstrange.jpg" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Thor:Love and Thunder</h3>
+            <div class="mb-1 text-body-secondary">2022 . Action . 1h 59m</div>
+            <p class="mb-auto">Thor embarks on a journey unlike anything he's ever faced -- a quest for inner peace.
+              However, his retirement gets interrupted by Gorr the God Butcher, a galactic killer who seeks the
+              extinction of the gods. To combat the threat, Thor enlists the help of King Valkyrie, Korg and
+              ex-girlfriend Jane Foster, who -- to his surprise -- inexplicably wields his magical hammer. Together,
+              they set out on a harrowing cosmic adventure to uncover the mystery of the God Butcher's vengeance.</p>
+            <a href="https://en.wikipedia.org/wiki/Thor:_Love_and_Thunder"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Thor_Love_and_Thunder.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Avengers:Infinity War</h2>
+            <div class="mb-1 text-body-secondary">2018 . Action . 2h 29m</div>
+            <p class="card-text mb-auto">Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their
+              most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans
+              to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself
+              has never been more uncertain as everything the Avengers have fought for has led up to this moment.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Avengers:_Infinity_War"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Avengers_Infinity_War.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Black Panther:Wakanda Forever</h3>
+            <div class="mb-1 text-body-secondary">2022 . Action . 2h 41m</div>
+            <p class="mb-auto">Queen Ramonda, Shuri, M'Baku, Okoye and the Dora Milaje fight to protect their nation
+              from intervening world powers in the wake of King T'Challa's death. As the Wakandans strive to embrace
+              their next chapter, the heroes must band together with Nakia and Everett Ross to forge a new path for
+              their beloved kingdom.</p>
+            <a href="https://en.wikipedia.org/wiki/Black_Panther:_Wakanda_Forever"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Black_Panther_Wakanda_Forever.png"
+              alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Captain America:The Winter Soldier</h2>
+            <div class="mb-1 text-body-secondary">2014 . Action . 2h 16m</div>
+            <p class="card-text mb-auto">After the cataclysmic events in New York with his fellow Avengers, Steve
+              Rogers, aka Captain America (Chris Evans), lives in the nation's capital as he tries to adjust to modern
+              times. An attack on a S.H.I.E.L.D. colleague throws Rogers into a web of intrigue that places the whole
+              world at risk. Joining forces with the Black Widow (Scarlett Johansson) and a new ally, the Falcon, Rogers
+              struggles to expose an ever-widening conspiracy, but he and his team soon come up against an unexpected
+              enemy.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Captain_America:_The_Winter_Soldier"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="wintersoldier.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Spider-Man:Far From Home</h3>
+            <div class="mb-1 text-body-secondary">2019 . Action . 2h 10m</div>
+            <p class="mb-auto">Peter Parker's relaxing European vacation takes an unexpected turn when Nick Fury shows
+              up in his hotel room to recruit him for a mission. The world is in danger as four massive elemental
+              creatures -- each representing Earth, air, water and fire -- emerge from a hole torn in the universe.
+              Parker soon finds himself donning the Spider-Man suit to help Fury and fellow superhero Mysterio stop the
+              evil entities from wreaking havoc across the continent.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Spider-Man:_Far_From_Home"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Spider-Man_Far_From_Home.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Thor:Ragnarok</h2>
+            <div class="mb-1 text-body-secondary">2017 . Action . 2h 10m</div>
+            <p class="card-text mb-auto">Imprisoned on the other side of the universe, the mighty Thor finds himself in
+              a deadly gladiatorial contest that pits him against the Hulk, his former ally and fellow Avenger. Thor's
+              quest for survival leads him in a race against time to prevent the all-powerful Hela from destroying his
+              home world and the Asgardian civilization.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Thor:_Ragnarok"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Thor_Ragnarok.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Iron Man 3</h3>
+            <div class="mb-1 text-body-secondary">2013 . Action . 2h 10m</div>
+            <p class="mb-auto">Plagued with worry and insomnia since saving New York from destruction, Tony Stark
+              (Robert Downey Jr.), now, is more dependent on the suits that give him his Iron Man persona -- so much so
+              that every aspect of his life is affected, including his relationship with Pepper (Gwyneth Paltrow). After
+              a malevolent enemy known as the Mandarin (Ben Kingsley) reduces his personal world to rubble, Tony must
+              rely solely on instinct and ingenuity to avenge his losses and protect the people he loves.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Iron_Man_3" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Iron_Man_3.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Thor</h2>
+            <div class="mb-1 text-body-secondary">2011 . Action . 1h 54m</div>
+            <p class="card-text mb-auto">As the son of Odin (Anthony Hopkins), king of the Norse gods, Thor (Chris
+              Hemsworth) will soon inherit the throne of Asgard from his aging father. However, on the day that he is to
+              be crowned, Thor reacts with brutality when the gods' enemies, the Frost Giants, enter the palace in
+              violation of their treaty. As punishment, Odin banishes Thor to Earth. While Loki (Tom Hiddleston), Thor's
+              brother, plots mischief in Asgard, Thor, now stripped of his powers, faces his greatest threat.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Thor_(film)" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="thor.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Ant-Man</h3>
+            <div class="mb-1 text-body-secondary">2015 . Action . 1h 57m</div>
+            <p class="mb-auto">Forced out of his own company by former protégé Darren Cross, Dr. Hank Pym (Michael
+              Douglas) recruits the talents of Scott Lang (Paul Rudd), a master thief just released from prison. Lang
+              becomes Ant-Man, trained by Pym and armed with a suit that allows him to shrink in size, possess
+              superhuman strength and control an army of ants. The miniature hero must use his new skills to prevent
+              Cross, also known as Yellowjacket, from perfecting the same technology and using it as a weapon for evil.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Ant-Man_(film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="antman.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">The Incredible Hulk</h2>
+            <div class="mb-1 text-body-secondary">2008 . Action . 1h 52m</div>
+            <p class="card-text mb-auto">Scientist Bruce Banner (Edward Norton) desperately seeks a cure for the gamma
+              radiation that contaminated his cells and turned him into The Hulk. Cut off from his true love Betty Ross
+              (Liv Tyler) and forced to hide from his nemesis, Gen. Thunderbolt Ross (William Hurt), Banner soon comes
+              face-to-face with a new threat: a supremely powerful enemy known as The Abomination (Tim Roth).
+            </p>
+            <a href="https://en.wikipedia.org/wiki/The_Incredible_Hulk_(film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="halk.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Avengers:Age of Ultron</h3>
+            <div class="mb-1 text-body-secondary">2015 . Action . 2h 21m</div>
+            <p class="mb-auto">When Tony Stark (Robert Downey Jr.) jump-starts a dormant peacekeeping program, things go
+              terribly awry, forcing him, Thor (Chris Hemsworth), the Incredible Hulk (Mark Ruffalo) and the rest of the
+              Avengers to reassemble. As the fate of Earth hangs in the balance, the team is put to the ultimate test as
+              they battle Ultron, a technological terror hell-bent on human extinction. Along the way, they encounter
+              two mysterious and powerful newcomers, Pietro and Wanda Maximoff.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="age od ultron.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Captain America:The First Avenger</h2>
+            <div class="mb-1 text-body-secondary">2011 . Action . 2h 4m</div>
+            <p class="card-text mb-auto">It is 1941 and the world is in the throes of war. Steve Rogers (Chris Evans)
+              wants to do his part and join America's armed forces, but the military rejects him because of his small
+              stature. Finally, Steve gets his chance when he is accepted into an experimental program that turns him
+              into a supersoldier called Captain America. Joining forces with Bucky Barnes (Sebastian Stan) and Peggy
+              Carter (Hayley Atwell), Captain America leads the fight against the Nazi-backed HYDRA organization.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Captain_America:_The_First_Avenger"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Captain_America_The_First_Avenger.png"
+              alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Spider-Man:No Way Home</h3>
+            <div class="mb-1 text-body-secondary">2021 . Action . 2h 28m</div>
+            <p class="mb-auto">With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is
+              unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a
+              superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing
+              him to discover what it truly means to be Spider-Man.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Spider-Man:_No_Way_Home"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="nowayhome.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Doctor Strange In The Multiverse Of Madness</h2>
+            <div class="mb-1 text-body-secondary">2022 . Fantasy . 2h 6m</div>
+            <p class="card-text mb-auto">Doctor Strange teams up with a mysterious teenage girl from his dreams who can
+              travel across multiverses, to battle multiple threats, including other-universe versions of himself, which
+              threaten to wipe out millions across the multiverse.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Doctor_Strange_in_the_Multiverse_of_Madness"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250"
+              src="Doctor_Strange_in_the_Multiverse_of_Madness.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Ant-Man and the Wasp:Quantumania</h3>
+            <div class="mb-1 text-body-secondary">2023 . Action . 2h 5m</div>
+            <p class="mb-auto">Ant-Man and the Wasp find themselves exploring the Quantum Realm, interacting with
+              strange new creatures and embarking on an adventure that pushes them beyond the limits of what they
+              thought was possible.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Ant-Man_and_the_Wasp:_Quantumania"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Ant-Man_and_the_Wasp_Quantumania.png"
+              alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Ant-Man and the Wasp</h2>
+            <div class="mb-1 text-body-secondary">2018 . Action . 1h 58m</div>
+            <p class="card-text mb-auto">Scott Lang is grappling with the consequences of his choices as both a
+              superhero and a father. Approached by Hope van Dyne and Dr. Hank Pym, Lang must once again don the Ant-Man
+              suit and fight alongside the Wasp. The urgent mission soon leads to secret revelations from the past as
+              the dynamic duo finds itself in an epic battle against a powerful new enemy.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Ant-Man_and_the_Wasp"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Ant-Man_and_the_Wasp.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Guardians of the Galaxy vol. 2</h3>
+            <div class="mb-1 text-body-secondary">2017 . Action . 2h 16m</div>
+            <p class="mb-auto">The Guardians struggle to keep together as a team while dealing with their personal
+              family issues, notably Star-Lord's encounter with his father, the ambitious celestial being Ego. Peter
+              Quill and his fellow Guardians are hired by a powerful alien race, the Sovereign, to protect their
+              precious batteries from invaders.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_Vol._2"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Guardians_of_the_Galaxy_Vol._2.png"
+              alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Guardians od the Galaxy</h2>
+            <div class="mb-1 text-body-secondary">2014 . Action . 2h 1m</div>
+            <p class="card-text mb-auto">Brash space adventurer Peter Quill (Chris Pratt) finds himself the quarry of
+              relentless bounty hunters after he steals an orb coveted by Ronan, a powerful villain. To evade Ronan,
+              Quill is forced into an uneasy truce with four disparate misfits: gun-toting Rocket Raccoon,
+              treelike-humanoid Groot, enigmatic Gamora, and vengeance-driven Drax the Destroyer. But when he discovers
+              the orb's true power and the cosmic threat it poses, Quill must rally his ragtag group to save the
+              universe.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_(film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="guardian.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Iron Man</h3>
+            <div class="mb-1 text-body-secondary">2008 . Action . 2h 6m</div>
+            <p class="mb-auto">A billionaire industrialist and genius inventor, Tony Stark (Robert Downey Jr.), is
+              conducting weapons tests overseas, but terrorists kidnap him to force him to build a devastating weapon.
+              Instead, he builds an armored suit and upends his captors. Returning to America, Stark refines the suit
+              and uses it to combat crime and terrorism.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Iron_Man_(2008_film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="ironman2008.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Iron Man 2</h2>
+            <div class="mb-1 text-body-secondary">2010 . Action . 2h 5m</div>
+            <p class="card-text mb-auto">With the world now aware that he is Iron Man, billionaire inventor Tony Stark
+              (Robert Downey Jr.) faces pressure from all sides to share his technology with the military. He is
+              reluctant to divulge the secrets of his armored suit, fearing the information will fall into the wrong
+              hands. With Pepper Potts (Gwyneth Paltrow) and "Rhodey" Rhodes (Don Cheadle) by his side, Tony must forge
+              new alliances and confront a powerful new enemy.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Iron_Man_2" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="ironman2.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Avengers:Endgame</h3>
+            <div class="mb-1 text-body-secondary">2019 . Action . 3h 1m</div>
+            <p class="mb-auto">Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his
+              oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America
+              and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with
+              Thanos -- the evil demigod who decimated the planet and the universe.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Avengers:_Endgame"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Avengers_Endgame.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">The Guardians Of the Galaxy Holiday Special</h2>
+            <div class="mb-1 text-body-secondary">2022 . Action/Adventure . 42m</div>
+            <p class="card-text mb-auto">On a mission to make Christmas unforgettable for Quill, the Guardians head to
+              Earth in search of the perfect present.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/The_Guardians_of_the_Galaxy_Holiday_Special"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="holidayspecial.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Guardian of the Galaxy Vol. 3</h3>
+            <div class="mb-1 text-body-secondary">2023 . Action . 2h 29m</div>
+            <p class="mb-auto">Still reeling from the loss of Gamora, Peter Quill must rally his team to defend the
+              universe and protect one of their own. If the mission is not completely successful, it could possibly lead
+              to the end of the Guardians as we know them.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_Vol._3"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Guardians_of_the_Galaxy_Vol._3.png"
+              alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Fanstastic Four</h2>
+            <div class="mb-1 text-body-secondary">2015 . Action . 1h 40m</div>
+            <p class="card-text mb-auto">Transported to an alternate universe, four young outsiders gain superhuman
+              powers as they alter their physical form in shocking ways. Reed Richards becomes Mr. Fantastic, able to
+              stretch and twist his body at will, while pal Ben Grimm gains immense strength as the Thing. Johnny Storm
+              becomes the Human Torch, able to control and project fire, while his sister Sue becomes the Invisible
+              Woman. Together, the team must harness their new abilities to prevent Doctor Doom from destroying the
+              Earth.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Fantastic_Four_(2015_film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="fantastic.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Fantastic Four</h3>
+            <div class="mb-1 text-body-secondary">2005 . Action . 1h 46m</div>
+            <p class="mb-auto">Scientist Reed Richards (Ioan Gruffudd) persuades his arrogant former classmate, Victor
+              von Doom (Julian McMahon), to fund his experiments with cosmic energy. On von Doom's space station, the
+              crew -- including astronaut Ben Grimm (Michael Chiklis), researcher Sue Storm (Jessica Alba) and pilot
+              Johnny Storm (Chris Evans) -- are exposed to a mysterious cosmic storm that bestows super powers upon
+              them. As they cope with their transformations, von Doom vows his revenge.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Fantastic_Four_(2005_film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="four.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Logan</h2>
+            <div class="mb-1 text-body-secondary">2017 . Action . 2h 17m</div>
+            <p class="card-text mb-auto"> Wolverine and an extremely ill Charles Xavier who must defend a young mutant
+              named Laura from the Reavers led by Donald Pierce and Zander Rice.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Logan_(film)" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Logan_2017.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">The Wolverine</h3>
+            <div class="mb-1 text-body-secondary">2013 . Action . 2h 6m</div>
+            <p class="mb-auto">Lured to a Japan he hasn't seen since World War II, century-old mutant Wolverine (Hugh
+              Jackman) finds himself in a shadowy realm of yakuza and samurai. Wolverine is pushed to his physical and
+              emotional brink when he is forced to go on the run with a powerful industrialist's daughter (Tao Okamoto)
+              and is confronted -- for the first time -- with the prospect of death. As he struggles to rediscover the
+              hero within himself, he must grapple with powerful foes and the ghosts of his own haunted past.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/The_Wolverine_(film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="The_Wolverine.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Fantastic Four:Rise Of the Silver Surfer</h2>
+            <div class="mb-1 text-body-secondary">2007 . Action/Sci-fi . 1h 32m</div>
+            <p class="card-text mb-auto">Reed (Ioan Gruffudd), Susan (Jessica Alba), Johnny (Chris Evans) and Ben
+              (Michael Chiklis) face an intergalactic messenger who has arrived to prepare Earth for its destruction.
+              While the enigmatic being wreaks havoc around the world, the heroic quartet must also contend with the
+              unexpected return of their enemy, Victor Von Doom.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Fantastic_Four:_Rise_of_the_Silver_Surfer"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="rise of.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">The Amazing Spider-Man 2</h3>
+            <div class="mb-1 text-body-secondary">2014 . Action . 2h 22m</div>
+            <p class="mb-auto">Confident in his powers as Spider-Man, Peter Parker (Andrew Garfield) embraces his new
+              role as a hero and spends time with Gwen Stacy (Emma Stone) in between protecting New York from criminals.
+              However, his greatest battle yet is about to begin. With the emergence of Electro (Jamie Foxx), Peter must
+              confront an enemy far more powerful than he is. And when his old friend Harry Osborn (Dane DeHaan)
+              returns, Peter comes to realize that all his enemies have one thing in common: Oscorp.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/The_Amazing_Spider-Man_2"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="amazing 2.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Halk</h2>
+            <div class="mb-1 text-body-secondary">2003 . Action/Sci-fi . 2h 18m</div>
+            <p class="card-text mb-auto">Eric Bana ("Black Hawk Down") stars as scientist Bruce Banner, whose inner
+              demons transform him in the aftermath of a catastrophic experiment; Jennifer Connelly portrays Betty Ross,
+              whose scientific genius unwittingly helps unleash the Hulk; Nick Nolte plays Banner's brilliant father,
+              who passes on a tragic legacy to his son; and Sam Elliott portrays the commander of a top-secret military
+              research center.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Hulk_(film)" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Hulk_movie.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Punisher: War Zone</h3>
+            <div class="mb-1 text-body-secondary">2008 . Action . 1h 43m</div>
+            <p class="mb-auto">Frank Castle, aka The Punisher (Ray Stevenson), turns the streets of New York City red as
+              he wages a one man war against the crime syndicate responsible for the death of his wife and two kids.
+              Aided by his trusted sidekick, Microchip (Wayne Knight), he almost kills Billy Russoti (Dominic West) and
+              leaves him horribly disfigured. Billy renames himself Jigsaw and with the help of his crazed brother Loony
+              Bin Jim, recruits criminals from every corner of the city to do battle with Frank.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Punisher:_War_Zone"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="punisher.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Daredevil</h2>
+            <div class="mb-1 text-body-secondary">2003 . Action . 1h 43m</div>
+            <p class="card-text mb-auto">Premise. The first season sees lawyer-by-day Matt Murdock use his heightened
+              senses from being blinded as a young boy to fight crime at night on the streets of New York City's Hell's
+              Kitchen neighborhood as Daredevil while uncovering a conspiracy of the criminal underworld being led by
+              Wilson Fisk.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Daredevil_(TV_series)#:~:text=11%20External%20links-,Premise,being%20led%20by%20Wilson%20Fisk."
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Daredevil.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Spider-Man 3</h3>
+            <div class="mb-1 text-body-secondary">2007 . Action . 2h 19m</div>
+            <p class="mb-auto">Peter Parker (Tobey Maguire) and M.J. (Kirsten Dunst) seem to finally be on the right
+              track in their complicated relationship, but trouble looms for the superhero and his lover. Peter's
+              Spider-Man suit turns black and takes control of him, not only giving Peter enhanced power but also
+              bringing out the dark side of his personality. Peter must overcome the suit's influence as two
+              supervillains, Sandman and Venom, rise up to destroy him and all those he holds dear.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Spider-Man_3" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="spider3.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Blade:Trinity</h2>
+            <div class="mb-1 text-body-secondary">2004 . Action . 1h 52m</div>
+            <p class="card-text mb-auto">The war between humans and vampires continues, but the humans' best hope,
+              human-vampire hybrid warrior Blade (Wesley Snipes), has been framed for countless murders, turning popular
+              sentiment against him. The vampire leader responsible for Blade's bad publicity is Danica Talos (Parker
+              Posey), who's determined to finally lead her bloodthirsty compatriots to victory. Now Blade must team up
+              with a band of rogue vampire hunters (Ryan Reynolds, Jessica Biel) to save humanity.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Blade:_Trinity"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Blade_Trinity.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Venome</h3>
+            <div class="mb-1 text-body-secondary">2018 . Action . 1h 52m</div>
+            <p class="mb-auto">Journalist Eddie Brock is trying to take down Carlton Drake, the notorious and brilliant
+              founder of the Life Foundation. While investigating one of Drake's experiments, Eddie's body merges with
+              the alien Venom -- leaving him with superhuman strength and power. Twisted, dark and fueled by rage, Venom
+              tries to control the new and dangerous abilities that Eddie finds so intoxicating.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Venom_(2018_film)"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="venome.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">X-Men:First Class</h2>
+            <div class="mb-1 text-body-secondary">2011 . Action . 2h 11m</div>
+            <p class="card-text mb-auto">It focuses on mutants Wolverine and Rogue as they are brought into a conflict
+              between two groups with radically different approaches to bringing about the acceptance of mutant-kind:
+              Charles Xavier's X-Men, and the Brotherhood of Mutants, led by Magneto.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/X-Men:_First_Class"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="xmen.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">Deadpool 2</h3>
+            <div class="mb-1 text-body-secondary">2018 . Action . 1h 59m</div>
+            <p class="mb-auto">Wisecracking mercenary Deadpool meets Russell, an angry teenage mutant who lives at an
+              orphanage. When Russell becomes the target of Cable -- a genetically enhanced soldier from the future --
+              Deadpool realizes that he'll need some help saving the boy from such a superior enemy. He soon joins
+              forces with Bedlam, Shatterstar, Domino and other powerful mutants to protect young Russell from Cable and
+              his advanced weaponry.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Deadpool_2" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Deadpool_2.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Deadpool & Wolverine</h2>
+            <div class="mb-1 text-body-secondary">2024 . Action/comedy . 2h 7m</div>
+            <p class="card-text mb-auto">Deadpool's peaceful existence comes crashing down when the Time Variance
+              Authority recruits him to help safeguard the multiverse. He soon unites with his would-be pal, Wolverine,
+              to complete the mission and save his world from an existential threat.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Deadpool_%26_Wolverine"
+              class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="dead.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Marvel Presents</strong>
+            <h3 class="mb-0">X2</h3>
+            <div class="mb-1 text-body-secondary">2003 . Action/Sci-fi . 2h 13m</div>
+            <p class="mb-auto">Stryker (Brian Cox), a villianous former Army commander, holds the key to Wolverine's
+              (Hugh Jackman) past and the future of the X-Men. This threat re-ignites the call for a mutant registration
+              act. Stryker starts a full-out assault on Professor Xavier's (Patrick Stewart) mansion and school. After
+              escaping his plastic cell, Magneto (Ian McKellen) proposes a partnership with Xavier and the X-Men to
+              combat this new formidable enemy they both have in common.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/X2_(film)" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="x2.png" alt="error">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Marvel Presents</strong>
+            <h2 class="mb-0">Spider-Man 2</h2>
+            <div class="mb-1 text-body-secondary">2024 . Action . 2h 7m</div>
+            <p class="card-text mb-auto">When a failed nuclear fusion experiment results in an explosion that kills his
+              wife, Dr. Otto Octavius (Alfred Molina) is transformed into Dr. Octopus, a cyborg with deadly metal
+              tentacles. Doc Ock blames Spider-Man (Tobey Maguire) for the accident and seeks revenge. Meanwhile,
+              Spidey's alter ego, Peter Parker, faces fading powers and self-doubt. Complicating matters are his best
+              friend's (James Franco) hatred for Spider-Man and his true love's (Kirsten Dunst) sudden engagement to
+              another man.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Spider-Man_2" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="Spider-Man_2.png" alt="error">
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- Cookie Consent Modal -->
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cookie Consent</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+      <div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cookieModalLabel"><b>We Value Your Privacy</b></h5>
+            </div>
+            <div class="modal-body">
+              <i>This website uses cookies to enhance your browsing experience, analyze site traffic, and serve
+                personalized content. By clicking "Accept All", you agree to the use of cookies. To learn more, visit
+                our privacy policy.</i>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="declineCookies">Decline</button>
+              <button type="button" class="btn btn-primary" id="acceptCookies">Accept All</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Message Modal -->
+      <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="messageModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="messageBody"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap JS and dependencies -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var cookieModal = new bootstrap.Modal(document.getElementById('cookieModal'), {
+            backdrop: 'static',
+            keyboard: false
+          });
+          cookieModal.show();
+
+          var messageModal = new bootstrap.Modal(document.getElementById('messageModal'));
+
+          // Handle accept cookies button click
+          document.getElementById('acceptCookies').addEventListener('click', function () {
+            // Store cookie consent in localStorage
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('messageModalLabel').innerText = 'Hello! Namaste 🙏🏻';
+            document.getElementById('messageBody').innerText = 'Welcome to Marvel Studio';
+            cookieModal.hide();
+            messageModal.show();
+          });
+
+          // Handle decline cookies button click
+          document.getElementById('declineCookies').addEventListener('click', function () {
+            document.getElementById('messageModalLabel').innerText = 'Oops!😟';
+            document.getElementById('messageBody').innerText = 'we can try better and smooth this site';
+            cookieModal.hide();
+            messageModal.show();
+          });
+
+          // Check if the user has already accepted cookies
+          if (localStorage.getItem('cookieConsent') === 'accepted') {
+            cookieModal.hide();
+          }
+        });
+      </script>
+
+
+<style>
+  .text-yellow {
+    color: yellow;
+  }
+  .text-white {
+    color: yellow;
+  }
+</style>
+
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">
+    Download All The Movie Link: 
+    <a href="https://9xflix.markets/m/" target="_blank" class="text-yellow">9xflix</a>, 
+    <a href="https://movies4u.casa/" target="_blank" class="text-yellow">movies4u</a>
+  </p>
+</footer>
+        
+<footer class="container my-4">
+  <p class="float-end"><a href="#">Back to top</a></p>
+  <p>© 2023 onward Company, Inc. · <a href="https://www.marvel.com/corporate/privacy">Privacy</a> · <a href="https://www.marvel.com/corporate/terms">Terms</a></p>
+</footer>
+
+       
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+</body>
+    </html>
+
+   
+
+
+   
+
+   
+
+
